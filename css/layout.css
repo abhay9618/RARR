@@ -1,0 +1,122 @@
+/* layout.css — Layout: header and navigation, citizen and command layouts, grids, responsive rules. */
+
+.bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background: var(--sf);
+  border-bottom: 1px solid var(--ln);
+  font-size: 13px;
+}
+
+.cw {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 14px 16px 28px;
+}
+
+.hn {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  flex-basis: 100%;
+  order: 3;
+  border-top: 1px solid var(--ln);
+  margin: 0 -14px -8px;
+  padding: 0 8px;
+}
+
+.hn button {
+  border: 0;
+  border-radius: 0;
+  background: none;
+  min-height: 48px;
+  white-space: nowrap;
+}
+
+.hn .on {
+  color: #B4161B;
+  box-shadow: inset 0 -3px 0 #B4161B;
+}
+
+.g2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0 0 12px;
+}
+
+.opw {
+  display: flex;
+  min-height: calc(100dvh - 90px);
+}
+
+.side {
+  width: 208px;
+  flex: none;
+  background: #0B1F3A;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.side button {
+  background: none;
+  border: 0;
+  color: #D3DBE6;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.side .on {
+  background: #1B3F72;
+  color: #fff;
+}
+
+.om {
+  flex: 1;
+  min-width: 0;
+  padding: 18px;
+}
+
+.kp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.kp .card {
+  margin: 0;
+}
+
+.g3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 12px;
+}
+
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+@media(max-width:800px) {
+  .opw {
+    flex-direction: column;
+  }
+  .side {
+    width: auto;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  .side button {
+    width: auto;
+    white-space: nowrap;
+  }
+}

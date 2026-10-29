@@ -1,0 +1,46 @@
+/* tokens.css — Design tokens: colors and the dark-mode palette. */
+
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top,0px);
+  padding-bottom: env(safe-area-inset-bottom,0px);
+  --bg: #F4F5F7;
+  --sf: #fff;
+  --ink: #0B1F3A;
+  --mu: #33445C;
+  --ln: #D3D9E1;
+  --nv: #0B1F3A;
+  --map: #E3E8EF;
+  --ok: #0E5229;
+  --oks: #E6F4EB;
+  --pe: #6B3A00;
+  --pes: #FDF1DC;
+  --in: #173EA8;
+  --ins: #E7EDFB;
+  --ur: #7A0E12;
+  --urs: #FCEBEB;
+  --nu: #3A4658;
+  --nus: #ECEFF3;
+}
+
+@media(prefers-color-scheme:dark) {
+  :root:not([data-theme=light]) {
+    --bg: #0B1424;
+    --sf: #14233A;
+    --ink: #E8EDF5;
+    --mu: #B9C4D4;
+    --ln: #2B3C57;
+    --nv: #2F5597;
+    --map: #1E2E47;
+    --ok: #9FE0B8;
+    --oks: #12301F;
+    --pe: #F2C27A;
+    --pes: #3A2A10;
+    --in: #A9C0FF;
+    --ins: #1A2A55;
+    --ur: #FFB3B5;
+    --urs: #3E1518;
+    --nu: #C5CFDD;
+    --nus: #22324A;
+  }
+}

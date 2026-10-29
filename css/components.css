@@ -1,0 +1,187 @@
+/* components.css — Components: cards, chips, banners, rows, tables, thumbnails, dialog, toast. */
+
+.card {
+  background: var(--sf);
+  border: 1px solid var(--ln);
+  border-radius: 14px;
+  padding: 14px;
+  margin: 0 0 12px;
+}
+
+.warn {
+  background: var(--pes);
+  color: var(--pe);
+  border-color: #E8A33D;
+}
+
+.bn {
+  background: var(--oks);
+  color: var(--ok);
+  border: 1px solid var(--ok);
+  border-radius: 12px;
+  padding: 12px;
+  margin: 0 0 12px;
+}
+
+small {
+  font-size: 12px;
+}
+
+.chip {
+  display: inline-flex;
+  gap: 4px;
+  padding: 3px 9px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ok {
+  background: var(--oks);
+  color: var(--ok);
+}
+
+.pe {
+  background: var(--pes);
+  color: var(--pe);
+}
+
+.in {
+  background: var(--ins);
+  color: var(--in);
+}
+
+.ur {
+  background: var(--urs);
+  color: var(--ur);
+}
+
+.nu {
+  background: var(--nus);
+  color: var(--nu);
+}
+
+.demo {
+  background: #0B1F3A;
+  color: #fff;
+  font-size: 13px;
+  padding: 8px 12px;
+}
+
+.demo a {
+  color: #E8A33D;
+  font-weight: 700;
+}
+
+.num {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid var(--ln);
+  border-radius: 10px;
+  margin: 0 0 8px;
+  flex-wrap: wrap;
+}
+
+.sm {
+  font-size: 13px;
+  padding: 0 10px;
+}
+
+.sc {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid var(--ln);
+  vertical-align: middle;
+}
+
+.th {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.th img,
+.ph {
+  width: 96px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: var(--nus);
+  display: inline-grid;
+  place-items: center;
+  font-size: 11px;
+  color: var(--mu);
+  text-align: center;
+}
+
+.ov {
+  position: fixed;
+  inset: 0;
+  background: rgba(11,31,58,.55);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  z-index: 9;
+}
+
+.dg {
+  background: var(--sf);
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#t {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  background: #0B1F3A;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  z-index: 10;
+  max-width: 90vw;
+}
+
+#t:empty {
+  display: none;
+}
+
+ol.st {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bx {
+  height: 10px;
+  background: var(--nv);
+  border-radius: 5px;
+  min-width: 2px;
+}

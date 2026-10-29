@@ -1,0 +1,139 @@
+/* base.css — Base styles: reset, typography, buttons, form controls, focus, reduced motion. */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 15px/1.45 "Public Sans",system-ui,sans-serif;
+}
+
+button,
+.btn {
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid var(--ln);
+  background: var(--sf);
+  color: var(--ink);
+  font: 600 14px "Public Sans",sans-serif;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 3px solid #4C7DF0;
+  outline-offset: 2px;
+}
+
+.pr {
+  background: var(--nv);
+  color: #fff;
+  border-color: var(--nv);
+}
+
+.rd {
+  background: #B4161B;
+  color: #fff;
+  border-color: #B4161B;
+}
+
+.big {
+  width: 100%;
+  min-height: 76px;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 16px;
+}
+
+.err {
+  color: var(--ur);
+  font-weight: 600;
+}
+
+.mu,
+small {
+  color: var(--mu);
+}
+
+select,
+input,
+textarea {
+  min-height: 44px;
+  border: 1px solid var(--ln);
+  border-radius: 10px;
+  background: var(--sf);
+  color: var(--ink);
+  padding: 6px 10px;
+  font: inherit;
+  max-width: 100%;
+}
+
+textarea {
+  width: 100%;
+  min-height: 90px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 10px 0 4px;
+}
+
+label.i {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 400;
+  margin: 4px 0;
+}
+
+label.i input[type=checkbox] {
+  min-height: 0;
+  width: 20px;
+  height: 20px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.h1 {
+  font-size: 28px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+@media(prefers-reduced-motion:reduce) {
+  * {
+    animation: none!important;
+    transition: none!important;
+  }
+}
